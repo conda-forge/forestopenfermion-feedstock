@@ -11,7 +11,7 @@ source:
   sha256: a47fd36619ea1cbb973dce33d1716b83e988d8b0acaa97d4bb94ddec7eda50ff
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,6 @@ requirements:
     - python >=3.6
     - grove <2.0.0
     - scipy >=1.0.0,<2.0.0
-    - mock
 
 test:
   imports:
